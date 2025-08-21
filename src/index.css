@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure proper font rendering and base styles */
+@layer base {
+  html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, sans-serif;
+  }
+
+  body {
+    @apply antialiased;
+  }
+
+  /* Ensure dark mode transitions work properly */
+  * {
+    @apply transition-colors duration-200;
+  }
+}
